@@ -115,7 +115,7 @@
 
             const handleSubmit = (e) => {
                 e.preventDefault();
-                if (totalAmount === 0) return alert("大仁哥提醒您：請至少選擇一個商品喔！");
+                if (totalAmount === 0) return alert("提醒您：請至少選擇一個商品喔！");
                 
                 setIsSubmitting(true);
                 const queryParams = new URLSearchParams();
@@ -161,7 +161,7 @@
                         <div className="bg-white p-10 rounded-3xl shadow-2xl max-w-sm w-full border-t-8 border-orange-600">
                             <div className="text-6xl mb-4 text-orange-500">🥨</div>
                             <h2 className="text-2xl font-black text-stone-800 mb-2">訂購成功！</h2>
-                            <p className="text-stone-500 mb-6">大仁哥已收到您的訂單<br/>總金額：<span className="text-red-600 font-bold text-xl">${totalAmount}</span></p>
+                            <p className="text-stone-500 mb-6">已收到您的訂單<br/>總金額：<span className="text-red-600 font-bold text-xl">${totalAmount}</span></p>
                             <button onClick={() => window.location.reload()} className="w-full bg-orange-600 text-white py-3 rounded-xl font-bold shadow-lg hover:bg-orange-700 transition-all">返回</button>
                         </div>
                     </div>
@@ -173,7 +173,7 @@
                     {/* Header */}
                     <div className="bg-stone-800 text-white py-12 px-6 text-center shadow-lg border-b-4 border-orange-600">
                         <h1 className="text-3xl md:text-5xl font-black mb-2 tracking-tighter">115 弘森食品行</h1>
-                        <p className="text-orange-400 font-bold tracking-widest text-sm md:text-base">大仁哥嚴選 ‧ 傳統好滋味 ‧ 手機下單</p>
+                        <p className="text-orange-400 font-bold tracking-widest text-sm md:text-base">嚴選高品質食品 ‧ 傳統好滋味</p>
                     </div>
 
                     <div className="max-w-4xl mx-auto -mt-6 px-4">
@@ -233,8 +233,8 @@
                             <p className="text-3xl font-black text-red-600">${totalAmount}</p>
                         </div>
                         <div className="text-right">
-                            <p className="text-[10px] text-stone-400 font-bold">大仁哥 ‧ 柏仁購物商城</p>
-                            <p className="text-[10px] text-stone-400 font-bold italic underline">弘森食品行 訂購專用</p>
+                            <p className="text-[10px] text-stone-400 font-bold">弘森食品行</p>
+                            <p className="text-[10px] text-stone-400 font-bold italic underline">訂購專用</p>
                         </div>
                     </div>
                 </div>
@@ -246,4 +246,5 @@
     </script>
 </body>
 </html>
+
 
